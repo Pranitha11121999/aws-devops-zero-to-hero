@@ -1,0 +1,15 @@
+## Tag Editor
+  - List of resources that are costly are mentioned here 
+
+
+- To get it in written report 
+  1. aws resourcegroupstaggingapi get-resource --region south-us-1 >> json
+  2. In shell, if we what to add more regions we can write a looping statement
+      ```
+        for i in ap-south-1 us-east-1 ; do aws resourcegroupstaggingapi get-resource --region $i; done
+
+we can also limit our using Budget and Cost Managment and setting a limit
+
+Best practices :
+  1. Always use Infracture as Code - In UI u might forget few but when you use Iac we can delete the resources like in terraform 'Terraform Delete'
+  2. Least privellage
